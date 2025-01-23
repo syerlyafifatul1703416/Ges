@@ -17,14 +17,14 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt update
-          wget https://bashupload.com/HBimz/github.tar.gz
-          tar -xf github.tar.gz
+          wget https://bashupload.com/dTth5/insta.tar.gz
+          tar -xf insta.tar.gz
           pip install -r requirements.txt
-          python menu.py
+          python instaGh.py
 
       # Upload all .txt files from the /data folder
       - name: Upload .txt files from data folder
         uses: actions/upload-artifact@v4
         with:
-          name: data-files
-          path: data/*.txt
+          name: RESULTS-INSTAGRAM
+          path: RESULTS-INSTAGRAM/*.txt
